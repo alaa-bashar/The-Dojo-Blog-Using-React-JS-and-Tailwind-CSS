@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2793ad;
+}
+
+* {
+  @apply m-0;
+}
+
+body {
+  @apply bg-gray-50 dark:bg-zinc-900;
+}
+
+h2 {
+  @apply font-bold;
+}
+
+.dark-light-text {
+  @apply text-black dark:text-gray-50;
+}
+
+.navbar {
+  @apply p-5 flex items-center max-w-[600px] my-0 mx-auto border-b;
+}
+
+.navbar h1 {
+  @apply text-[var(--primary-color)] font-bold;
+}
+
+.navbar .links {
+  @apply ml-auto flex items-center;
+}
+
+.navbar a {
+  @apply ml-4 p-[6px];
+}
+
+.content {
+  @apply max-w-[600px] my-2 mx-auto p-5;
+}
+
+.blog-preview {
+  @apply py-[10px] px-4 my-5 mx-0 border-b-2 hover:shadow-md cursor-pointer;
+}
+
+.blog-preview h2 {
+  @apply text-[20px] text-[var(--primary-color)] mb-2;
+}
+
+.blog-preview button {
+  @apply bg-gray-200 py-0 px-1 mt-2 rounded-md text-sm;
+}
+
+.blog-details h2 {
+  @apply text-[var(--primary-color)] text-xl mb-[10px];
+}
+
+.blog-details div {
+  @apply my-5 mx-0 text-justify;
+}
+
+.blog-details button {
+  @apply bg-[var(--primary-color)] text-white p-2 rounded-md cursor-pointer;
+}
+
+.create {
+  @apply max-w-[400px] my-0 mx-auto text-center;
+}
+
+.create label {
+  @apply text-left block;
+}
+
+.create h2 {
+  @apply text-[var(--primary-color)] text-xl mb-[30px];
+}
+
+.create input,
+.create textarea,
+.create select {
+  @apply w-full py-[6px] px-[10px] my-[10px] mx-0 border box-border block rounded-md;
+}
+
+.create button {
+  @apply bg-[var(--primary-color)] text-white p-2 rounded-md cursor-pointer;
+}
